@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.9.1/font/bootstrap-icons.min.css">
+    <title>tsg-developer</title>
+</head>
+<body>
+    <header id="aInicio">
+        <div class="menuDesktop">
+            <div class="ciLogo">
+                <a href=""><img src="../img/logo.png" alt=""></a>
+            </div>
+            <menu>
+                <ul>
+                    <li><a href="#aInicio">Inicio</a></li>
+                    <li><a href="#espec">Especialidades</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                </ul>
+            </menu>
+            <button>Contato</button>
+        </div>
+        
+        <div class="cgMenuMobile">
+            <div class="abrirMenu" id="abrirMenu" onclick="abrir()">
+                <i class="bi bi-list"></i>
+            </div>
+            <div class="menuMobile" id="menuMobile">
+                <div class="btnFechar" onclick="fechar()">
+                    <i class="bi bi-x"></i>
+                </div>
+                <menu>
+                    <ul>
+                        <li><a href="#aInicio" onclick="fechar()">Inicio</a></li>
+                        <li><a href="#espec" onclick="fechar()">Especialidades</a></li>
+                        <li><a href="#sobre" onclick="fechar()">Sobre</a></li>
+                        <li><a href="#projetos" onclick="fechar()">Projetos</a></li>
+                        <li><a href="#contatos" onclick="fechar()">Contato</a></li>
+                    </ul>
+                </menu>
+            </div>
+            <div class="overlayMenu" id="overlayMenu" onclick="fechar()"></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- SEC 1 -->
+        <section class="sec1">
+            <div>
+                <h1>TRANSFORMANDO IDEIAS EM <span>REALIDADE DIGITAL.</span></h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vitae autem amet totam. Modi recusandae delectus omnis in iusto eius ipsam necessitatibus illum porro accusamus maxime nesciunt, praesentium illo nam at Lorem, ipsum dolor sit amet consectetur adipisicing elit. Earum mollitia est laboriosam eum, assumenda officia voluptatum illum culpa dolorum temporibus quis harum numquam quisquam voluptate, rerum reiciendis ducimus asperiores impedit?</p>
+                <a href="https://wa.me/5511953606595?text=Olá Thiago, vi seu site e queria fazer um orçamento!"><button target="_blank">Entre em contato</button></a>
+            </div>
+            <div>
+                <img src="../img/pessoa1.png" alt="">
+            </div>
+        </section>
+
+        <!-- SEC 2 -->
+        <section class="sec2" id="espec">
+            <h2>MINHAS <span>ESPECIALIDADES.</span></h2>
+            <div class="cgEspec">
+                <div class="cEspec">
+                    <div class="boxIcon"><i class="bi bi-file-earmark-code"></i></div>
+                    <h3>WebSite</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus ipsum doloribus ea amet nobis voluptates, minus iure quaerat aut alias harum magni maxime fugiat. Rerum, dolore! Quo commodi sequi officiis!</p>
+                </div>
+                <div class="cEspec">
+                    <div class="boxIcon"><i class="bi bi-cart"></i></div>
+                    <h3>Ecommerce</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus ipsum doloribus ea amet nobis voluptates, minus iure quaerat aut alias harum magni maxime fugiat. Rerum, dolore! Quo commodi sequi officiis!</p>
+                </div>
+                <div class="cEspec">
+                    <div class="boxIcon"><i class="bi bi-wordpress"></i></div>
+                    <h3>WordPress</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus ipsum doloribus ea amet nobis voluptates, minus iure quaerat aut alias harum magni maxime fugiat. Rerum, dolore! Quo commodi sequi officiis!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEC 3 -->
+        <section class="sec3">
+            <div class="ciPersona">
+            </div>
+            <div class="ctxt2" id="sobre">
+                <h3>MUITO PRAZER,<br><span>SOU O THIAGO SILVA.</span></h3>
+                <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident corrupti accusamus quo facere praesentium dolorum, explicabo ea non ipsum repellendus,  atque adipisci dolor, nobis est tempore, hic laborum maxime numquam rem. Fugiat nulla quam tempora ut quae nemo optio dolorem! Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+                <br><br>    
+                Inventore autem mollitia, quae eos nemo commodi debitis delectus, voluptatum nihil minima corrupti repellendus iste rem quibusdam soluta repudiandae rerum aspernatur eveniet.Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident corrupti accusamus quo facere praesentium dolorum, explicabo ea non ipsum repellendus, consectetur cum tempora distinctio voluptates rerum accusantium ad. Temporibus, in? Lorem ipsum dolor, sit amet consectetur adipisicing elit. amet consectetur adipisicing elit. Inventore autem mollitia, quae eos nemo commodi debitis delectus, voluptatum nihil minima corrupti repellendus iste rem quibusdam soluta repudiandae rerum aspernatur eveniet.</P>
+                <div class="contetIcon">
+                    <a href="https://www.linkedin.com/in/thiago-gon%C3%A7alves-351226149/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                    <a href="https://github.com/thiago-tsg?tab=repositories" target="_blank"><i class="bi bi-github"></i></a>
+                    <a href="https://wa.me/5511953606595?text=Olá Thiago, vi seu site e queria fazer um orçamento!" target="_blank"><i class="bi bi-whatsapp"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEC 4 -->
+        <section class="sec4" id="projetos">
+            <h2>MEU <span>PORTFÓLIO.</span></h2>
+            <div class="carousel-container">
+                <button id="carousel-prev" class="carousel-prev">&#10094;</button>
+                <div class="carousel-wrapper">
+                    <div class="carousel">
+                        <div class="project" style="background-image: url(../img/imagem.jpg);">
+                            <div class="overlay">Projeto 1</div>
+                        </div>
+                        <div class="project" style="background-image: url(../img/imagem.jpg);">
+                            <div class="overlay">Projeto 2</div>
+                        </div>
+                        <div class="project" style="background-image: url(../img/imagem.jpg);">
+                            <div class="overlay">Projeto 3</div>
+                        </div>
+                    </div>
+                </div>
+                <button id="carousel-next" class="carousel-next">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- FORM -->
+        <form id="form" >
+            <h2 id="contatos">FALA <span>COMIGO.</span></h2>
+            <div class="cForm">
+
+                <input type="text" name="txtname required" id="txtname" placeholder="Seu nome:">
+
+                <input type="email" name="txtemail required" id="txtemail" placeholder="Seu e-mail:">
+
+                <input type="tel" name="txttel required" id="txttel" placeholder="Contato:">
+
+                <textarea name="txtarea" id="txtarea" placeholder="Sua mensagem:" rows="10"></textarea>
+
+                <button type="submit" target="_blank">Enviar</button>
+
+            </div>
+        </form>
+    </main>
+    
+    <footer>
+        <div class="cFooter">
+            <div class="ciFooter">
+                <img src="../img/logo.png" alt="">
+            </div>
+            <div class="socialFooter">
+                <a href="https://www.linkedin.com/in/thiago-gon%C3%A7alves-351226149/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/thiago-tsg?tab=repositories" target="_blank"><i class="bi bi-github"></i></a>
+                <a href="https://wa.me/5511953606595?text=Olá Thiago, vi seu site e queria fazer um orçamento!" target="_blank"><i class="bi bi-whatsapp"></i></a>
+            </div>
+        </div>
+        <hr>
+        <div class="boxEmail">
+            <i class="bi bi-envelope"></i>
+            <a href="mailto:t.goncalves1999@gmail.com">
+                <p>t.goncalves1999@gmail.com</p>
+            </a>
+        </div>
+    </footer>
+    
+    <script src="../js/script.js"></script>
+</body>
+</html>

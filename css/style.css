@@ -1,0 +1,723 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+:root{
+    --verde: #00FF08;
+    --verde2: #2c862f;
+    --cinza: #d3d3d396;
+}
+
+*{
+    color: white;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #2c0258 ;
+    padding: 3rem;
+}
+
+/* MENU DESKTOP */
+
+.menuDesktop{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ciLogo{
+    width: 7rem;
+}
+
+.ciLogo img{
+    width: 100%;
+}
+
+.cgMenuMobile{
+    display: none;
+}  
+
+.menuDesktop ul{
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    gap: 7rem;
+    font-weight: 700;
+}
+
+.menuDesktop ul li a{
+    color: var(--verde);
+    transition: 0.2s;
+}
+
+.menuDesktop ul li a:hover{
+    color: var(--verde2);
+}
+
+header button{
+    background-color: var(--verde);
+    font-size: 1.2rem;
+    border-radius: 20px;
+    padding: 0.7rem 2rem;
+    color: black;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+}
+
+header button:hover{
+    background-color: var(--verde2);
+    border-radius: 20px;
+    color: black;
+}
+
+/* MAIN */
+
+/* SEC 1 */
+
+.sec1{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.sec1 h1{
+    font-size: 3rem;
+    margin-top: 6rem;
+    font-weight: 900;
+}
+
+.sec1 span{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    color: var(--verde);
+}
+
+.sec1 p{
+    width: 80%;
+    font: 1rem;
+    margin-top: 2rem;
+}
+
+.sec1 button{
+    background-color: var(--verde);
+    font-size: 1.2rem;
+    border-radius: 20px;
+    padding: 0.7rem 2rem;
+    color: black;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    margin-top: 2rem;
+    transition: .2s;
+}
+
+.sec1 button:hover{
+    background-color: var(--verde2);
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+
+    } 100%{
+        top:30px;
+    }
+}
+
+.sec1 img{
+    position: relative;
+    animation: flutuar 1.5s ease-in-out infinite alternate;
+}
+
+/* SEC 2 */
+
+.sec2{
+    margin-bottom: 6rem;
+}
+
+.sec2 h2{
+    font-size: 3rem;
+    font-weight: 900;
+    margin: 6rem 0;
+    text-align: center;
+}
+
+.sec2 span{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    color: var(--verde);
+}
+
+.cgEspec{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    
+}
+
+.cEspec {
+    width: 100%;
+    border-radius: 20px;
+    padding: 40px;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.cEspec:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ffffff78;
+}
+
+.boxIcon i{
+    color: var(--verde);
+    font-size: 5rem;
+}
+
+.cEspec h3{
+    width: 80%;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.cEspec p{
+    width: 80%;
+    margin-top: 1rem;
+}
+
+    /* SEC 3 */
+
+.sec3{
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+}
+
+.ciPersona{
+    background-image: url(../img/perfil\ ia.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 125rem;
+    height: 30.5rem;
+    border-radius: 15px;
+}
+
+.ctxt2{
+    margin-top: 4rem;
+}
+
+.ctxt2 h3{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.ctxt2 h3 span {
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    color: var(--verde);
+}
+
+.ctxt2 p{
+    width: 90%;
+    margin-top: 1.5rem;
+}
+
+.contetIcon{
+    margin-top: 2rem;
+}
+
+.contetIcon i{
+    font-size: 3rem;
+    color: var(--verde);
+    margin-right: 2rem;
+    transition: .2s;
+}
+
+.contetIcon i:hover{
+    font-size: 4rem;
+    color: var(--verde2);
+}
+
+/* SEC 4 */
+
+.sec4{
+    margin: 6rem 0; 
+}
+
+.sec4 h2{
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 5rem;
+}
+
+.sec4 h2 span{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    color: var(--verde);
+}
+
+.carousel-prev, .carousel-next{
+    display: none;
+}
+
+.carousel{
+    display: flex;
+    justify-content: space-around;
+}
+
+.project{
+    width: 30%;
+    height: 80vh;
+    background-size: cover;
+    background-position: 100% 0%;
+    transition: 5s;
+    cursor: pointer;
+    position: relative;
+    border-radius: 40px;
+}
+
+.project:hover{
+    background-position: 100% 100%;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--verde);
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+.overlay:hover{
+    opacity: 0;
+}
+
+/* FORM */
+
+
+form h2{
+    margin-top: 1rem;
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+}
+
+form h2 span{
+    font-family: "Edu AU VIC WA NT Hand", cursive;
+    color: var(--verde);
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    margin: 2rem 0;
+    gap: 1rem;
+}
+
+form input, textarea{
+    color: white;
+    padding: 1.5rem 1rem;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, 0.075);
+    align-items: center;
+    width: 40%;
+    margin: auto;
+}
+
+form input::placeholder{
+    color: white;
+    font-size: 1rem;
+}
+
+form textarea::placeholder{
+    color: white;
+    font-size: 1rem;
+}
+
+form button{
+    background-color: var(--verde);
+    color: black;
+    padding: 1rem 1rem;
+    align-items: center;
+    width: 15%;
+    margin: auto;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    font-size: 1.5rem;
+    font-weight: 900;
+}
+
+form button:hover{
+    cursor: pointer;
+    background-color: var(--verde2);
+}
+
+/* FOOTER */
+
+footer{
+    padding: 2rem 0 0 0;
+    box-shadow: 0px -30px 30px -20px rgba(255, 255, 255, 0.114);
+    margin-top: 6rem;
+}
+
+.cFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ciFooter{
+    width: 7rem;
+}
+
+.ciFooter img{
+    width: 100%;
+}
+
+.socialFooter i{
+    font-size: 3rem;
+    color: var(--verde);
+    margin-right: 2rem;
+    transition: .2s;
+}
+
+.socialFooter i:hover{
+    font-size: 4rem;
+    color: var(--verde2); 
+}
+
+footer hr{
+    margin: 1.5rem 0 0.5rem 0;
+    background-color: var(--verde);
+    height: 2px;
+    border: none;
+}
+
+.boxEmail {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.boxEmail p{
+    display: flex;
+}
+
+.boxEmail i{
+    font-size: 1.5rem;
+}
+
+
+
+@media screen and (max-width: 1020px){
+    body{
+        width: 100%;
+        padding: 1.5rem;
+    }
+
+    .menuDesktop{
+        display: none;
+    }   
+
+    /* MENU MOBILE */
+
+    .cgMenuMobile{
+        display: block;
+    }
+
+    .abrirMenu{
+        text-align: end;
+        width: 5rem;
+        height: 5rem;
+        position: fixed;
+        top: 1rem; 
+        right: 1rem;
+    }
+
+    .abrirMenu i{
+        color: var(--verde);
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .menuMobile{
+        position: fixed;
+        height: 100vh;
+        background-color: #2c0258;
+        top: 0;
+        right: 0;
+        z-index: 9;
+        overflow: hidden;
+        width: 0%;
+        transition: width 0.3s ease;
+    }  
+
+    .btnFechar i{
+        padding: 1rem;
+        color: var(--verde);
+        font-size: 2rem;
+        cursor: pointer;
+    }
+
+    .menuMobile ul{
+        text-align: right;
+    }
+
+    .menuMobile li{
+        width: 100%;
+        transition: .2s;
+        cursor: pointer;
+        font-weight: 500;
+        font-size: 1rem;
+        padding: 1rem 1.5rem;
+    }
+
+    .menuMobile li:hover{
+        background-color: #2c862f;
+        color: #2c0258;
+    }
+
+    .overlayMenu{
+        background-color: rgba(0, 0, 0, 0.66);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        z-index: 8;
+        top: 0;
+        right: 0;
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+    
+    /* SEC 1 */
+
+    .sec1{
+        flex-wrap: wrap;
+    }
+
+    .sec1 > div{
+        order: 2;
+    }
+
+    .sec1 h1{
+        font-size: 1.5rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+
+    .sec1 p{
+        font-size: 1rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .sec1 button{
+        width: 100%;
+    }
+
+    .sec1 > div:nth-child(2){
+        order: 1;
+        width: 100%;
+    }
+
+    .sec1 > div:nth-child(2) img{
+        width: 100%;
+    }
+
+    /* SEC 2 */
+
+    .sec2{
+        margin-bottom: 0;
+    }
+
+    .sec2 h2{
+        font-size: 1.5rem;
+        text-align: start;
+        margin: 4.5rem 0 1rem 0 ;
+        text-align: center;
+    }
+
+    .cgEspec {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .cEspec{
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .boxIcon{
+        width: 100%;
+        padding: 0px;
+        text-align: center;
+    }
+
+    .boxIcon i{
+        color: var(--verde);
+        font-size: 5rem;
+    }
+
+    .cEspec h3{
+        text-align: center;
+        width: 100%;
+    }
+
+    .cEspec p{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* SEC 3 */
+
+    .sec3{
+        flex-wrap: wrap;
+    }
+
+    .sec3 > div:nth-child(1){
+        display: none;
+    }
+
+    .sec3 > div:nth-child(1) img{
+        width: 100%;
+    }
+
+    .ctxt2 h3{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .ctxt2 h3 span{
+        font-family: "Edu AU VIC WA NT Hand", cursive;
+    }
+
+    .ctxt2 p{
+        text-align: center;
+        width: 100%;
+    }
+
+    .contetIcon{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .contetIcon i{
+        font-size: 2.2rem;
+        margin-right: 0px;
+    }
+
+    /* SEC 4 */
+
+    .sec4 h2 {
+        font-size: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .carousel-container {
+        display: flex;
+        align-items: center;
+        position: relative;
+    }
+
+    .carousel-wrapper {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .carousel {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        width: 100%;
+    }
+
+    .project {
+        flex: 0 0 100%;
+        height: 80vh;
+    }
+
+    .carousel-prev, .carousel-next {
+        display: block;
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 10px;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+
+    .carousel-prev {
+        left: 10px;
+    }
+
+    .carousel-next {
+        right: 10px;
+    }
+
+    /* FORM */
+
+    form h2{
+        font-size: 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .cForm{
+        margin: auto;
+        width: 85%;
+    }
+
+    form input, textarea {
+        width: 100%;
+    }
+
+    form div button{
+        width: 100%;
+    }
+
+    /* FOOTER */
+
+    footer{
+        margin-top: 6rem;
+        box-shadow: 0px -100px -10px -10px rgba(255, 255, 255, 0.114);
+    }
+
+    .cFooter{
+        flex-direction: column;
+    }
+
+    .socialFooter{
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .socialFooter i{
+        margin-right: 0px;
+
+    }
+
+    .boxEmail{
+        display: flex;
+        justify-content: center;
+    }
+}
